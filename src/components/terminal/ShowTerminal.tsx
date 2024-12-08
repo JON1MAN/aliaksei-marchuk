@@ -8,7 +8,7 @@ const ShowTerminal: React.FC<{ onClick: () => void }> = ({onClick}) => {
     return (
         <div className="min-h-screen bg-custom-gray flex items-center justify-center shadow-2xl">
             <div
-                className="terminal max-w-[800px] max-h-[550px] max-[640px]:h-[450px] bg-custom-purple text-white font-mono rounded-lg shadow-lg flex flex-col fixed inset-0 mx-auto mt-10 animate-genie">
+                className="terminal max-w-[800px] max-h-[550px] max-[640px]:w-full max-[640px]:h-full bg-custom-purple text-white font-mono rounded-lg shadow-lg flex flex-col fixed inset-0 mx-auto mt-10 animate-genie">
                 <div
                     className="bg-custom-gray font-jetbrains text-white flex flex-row items-center justify-between px-4 py-2 rounded-t-lg">
                     <div className="w-full flex items-center justify-between ml-8">

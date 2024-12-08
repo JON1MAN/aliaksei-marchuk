@@ -3,8 +3,8 @@ import me from "../../assets/me.png";
 
 const ShowContact: React.FC<{ onClick: () => void }> = ({ onClick }) => {
     return (
-        <div className="h-[500px] flex items-center justify-center animate-genie">
-            <div className="w-full max-w-4xl flex flex-col bg-white rounded-2xl shadow-lg overflow-hidden ">
+        <div className="flex items-center justify-center animate-genie">
+            <div className="w-full flex flex-col bg-white rounded-2xl shadow-lg overflow-hidden ">
                 <div
                     className="w-full bg-gray-100 text-white flex flex-row items-center justify-between px-4 py-2 rounded-t-lg">
                     <div className="w-full flex items-center justify-center ml-8">
@@ -17,23 +17,9 @@ const ShowContact: React.FC<{ onClick: () => void }> = ({ onClick }) => {
                     </div>
                 </div>
                 <div
-                    className="w-full max-w-4xl flex flex-col lg:flex-row bg-white shadow-lg overflow-hidden">
+                    className="w-full flex flex-col lg:flex-row bg-white shadow-lg overflow-hidden">
                     {/* Sidebar */}
-                    <div className="w-full lg:w-1/3 bg-gradient-to-tl from-blue-100 to-gray-200 p-6">
-                        <h2 className="text-lg font-bold mb-4">All Contacts</h2>
-                        <ul className="space-y-4">
-                            <li>
-                                <div className="flex items-center space-x-5 cursor-pointer">
-                                    <div className="flex items-center space-x-5 cursor-pointer">
-                                        <div className="w-10 h-10 rounded-full overflow-hidden">
-                                            <img src={me} className="w-full h-full object-cover" alt="Profile"/>
-                                        </div>
-                                    </div>
-                                    <span className="font-semibold">Aliaksei Marchuk</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+
                     {/* Main Content */}
                     <div className="flex-1 p-6 md:p-8 flex flex-col items-center lg:items-start">
                         <div className="flex flex-col md:flex-row items-center md:space-x-4">

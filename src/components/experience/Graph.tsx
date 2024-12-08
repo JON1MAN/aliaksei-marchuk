@@ -1,10 +1,10 @@
 import {Card, CardBody, CardFooter, CardHeader, Typography} from "@material-tailwind/react";
-import Chart from "react-apexcharts";
+import Chart, { Props } from "react-apexcharts";
 import idea from "../../assets/icons/experience/idea.svg";
 import aibron from "../../assets/icons/experience/companies/aibron.png"
 import ink from "../../assets/icons/experience/companies/img.png"
 
-const chartConfig = {
+const chartConfig: Props = {
     type: "line",
     height: 240,
     series: [
@@ -18,9 +18,6 @@ const chartConfig = {
             toolbar: {
                 show: false,
             },
-        },
-        title: {
-            show: "",
         },
         dataLabels: {
             enabled: false,
@@ -117,41 +114,53 @@ const chartConfig = {
 
 const Graph = () => {
     return (
-        <Card>
+        <Card placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             <CardHeader
                 floated={false}
                 shadow={false}
                 color={"transparent"}
-                className="flex flex-col gap-2 rounded-lg md:flex-row md:items-center">
+                className="flex flex-col gap-2 rounded-lg md:flex-row md:items-center"
+                placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                 <div className="w-fit rounded-lg bg-white p-5 text-white">
                     <img src={idea} alt="Profile" className="w-24 р-24"/>
                 </div>
 
                 <div>
-                    <Typography variant="h2" color="blue-gray" className="font-bold">
+                    <Typography variant="h2" color="blue-gray" className="font-bold p-2"
+                                placeholder={undefined} onPointerEnterCapture={undefined}
+                                onPointerLeaveCapture={undefined}>
                         My Experience
                     </Typography>
-                    <Typography variant="small" color="gray" className="max-w-sm font-normal">
+                    <Typography variant="small" color="gray" className="max-w-sm font-normal p-2"
+                                placeholder={undefined} onPointerEnterCapture={undefined}
+                                onPointerLeaveCapture={undefined}>
                         Here is experience I am gaining to become great Software Engineer
                     </Typography>
                 </div>
             </CardHeader>
 
-            <CardBody className="px-2 pb-0">
+            <CardBody className="px-2 pb-0" placeholder={undefined}
+                      onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                 <Chart {...chartConfig} />
             </CardBody>
 
-            <CardFooter>
+            <CardFooter placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                 <div className="flex flex-col gap-4">
                     <div className="flex flex-row items-center justify-start space-x-5 shadow-xl rounded-2xl">
                         <div className="w-20 h-20 rounded-2xl">
                             <img src={aibron} className="w-20 h-20 rounded-2xl"/>
                         </div>
                         <div className="flex flex-col">
-                            <Typography variant="h2" color="blue-gray">
+                            <Typography variant="h2" color="blue-gray"
+                                        placeholder={undefined}
+                                        onPointerEnterCapture={undefined}
+                                        onPointerLeaveCapture={undefined}>
                                 Java Backend Developer Intern
                             </Typography>
-                            <Typography variant="small" color="gray" className="max-w-sm font-normal">
+                            <Typography variant="small" color="gray" className="max-w-sm font-normal"
+                                        placeholder={undefined}
+                                        onPointerEnterCapture={undefined}
+                                        onPointerLeaveCapture={undefined}>
                                 28th July 2024 - 1st September 2024
                             </Typography>
                         </div>
@@ -162,10 +171,16 @@ const Graph = () => {
                             <img src={ink} className="object-cover"/>
                         </div>
                         <div className="flex flex-col">
-                            <Typography variant="h2" color="blue-gray">
+                            <Typography variant="h2" color="blue-gray"
+                                        placeholder={undefined}
+                                        onPointerEnterCapture={undefined}
+                                        onPointerLeaveCapture={undefined}>
                                 Junior Full Stack Developer
                             </Typography>
-                            <Typography variant="small" color="gray" className="max-w-sm font-normal">
+                            <Typography variant="small" color="gray" className="max-w-sm font-normal"
+                                        placeholder={undefined}
+                                        onPointerEnterCapture={undefined}
+                                        onPointerLeaveCapture={undefined}>
                                 1st October 2024 - 1st November 2024
                             </Typography>
                         </div>

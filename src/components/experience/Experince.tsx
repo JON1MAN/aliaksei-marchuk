@@ -11,7 +11,6 @@ const Experience: React.FC<{onClick: () => void}> = ({onClick}) => {
         onClick();
     }
     return (
-        <div>
             <button
                 onClick={handleOnClick}
                 className={`p-2 rounded-2xl bg-white focus:outline-none transition ${
@@ -20,7 +19,6 @@ const Experience: React.FC<{onClick: () => void}> = ({onClick}) => {
             >
                 <img src={experience} alt="Icon Button" className="w-10 h-10 bg-white"/>
             </button>
-        </div>
     );
 };
 
