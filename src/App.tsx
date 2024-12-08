@@ -105,9 +105,10 @@ function App() {
                         )}
 
                         {showContact && (
-                            <div className="fixed inset-0 flex items-center justify-center z-50 animate-genie"
+                            <div className="fixed inset-0 flex flex-col items-center justify-center z-50 animate-genie"
                                  onClick={closeShowContact}>
-                                <div className="max-[640px]:w-full" onClick={(e) => e.stopPropagation()}>
+                                <div className="relative max-[640px]:w-full max-[640px]:h-full"
+                                     onClick={(e) => e.stopPropagation()}>
                                     <ShowContact onClick={closeShowContact}/>
                                 </div>
                             </div>
@@ -116,7 +117,7 @@ function App() {
                             <div className="fixed inset-0 flex flex-col items-center justify-center z-50 animate-genie"
                                  onClick={closeShowProjects}>
                                 <div
-                                    className="w-1/2 max-[640px]:w-full max-[1024px]:w-1/2 bg-gray-100 text-white flex flex-row items-center justify-between px-4 py-2 rounded-t-2xl">
+                                    className="w-1/2 max-[640px]:w-full max-[1024px]:w-1/2 bg-gray-100 text-white flex flex-row items-center justify-between px-4 py-2 md:rounded-t-2xl">
                                     <div className="w-full flex items-center justify-between">
                                         <span className="text-black font-bold mx-auto">Projects</span>
                                     </div>
@@ -131,7 +132,7 @@ function App() {
                                 </div>
 
                                 <div
-                                    className="relative w-1/2 h-3/4 max-[640px]:w-full max-[1024px]:w-1/2 max-[640px]:h-full lg:h-fit bg-white rounded-b-2xl overflow-y-auto"
+                                    className="relative w-1/2 h-3/4 max-[640px]:w-full max-[1024px]:w-1/2 max-[640px]:h-full lg:h-fit bg-white md:rounded-b-2xl overflow-y-auto"
                                     onClick={(e) => e.stopPropagation()}>
                                     <ShowProjects/>
                                 </div>
