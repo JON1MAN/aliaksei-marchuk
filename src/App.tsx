@@ -107,7 +107,7 @@ function App() {
                         {showContact && (
                             <div className="fixed inset-0 flex flex-col items-center justify-center z-50 animate-genie"
                                  onClick={closeShowContact}>
-                                <div className="relative max-[640px]:w-full max-[640px]:h-full"
+                                <div className="relative max-[640px]:w-full max-[640px]:h-full "
                                      onClick={(e) => e.stopPropagation()}>
                                     <ShowContact onClick={closeShowContact}/>
                                 </div>
