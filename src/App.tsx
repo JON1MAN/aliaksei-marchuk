@@ -1,5 +1,7 @@
 import './App.css'
-import background from "../src/assets/videos/jake_background.mp4"
+//import background from "../src/assets/videos/jake_background.mp4"
+import background from "../src/assets/adventure-time.jpg"
+
 import Terminal from "./components/terminal/Terminal.tsx";
 import ShowTerminal from "./components/terminal/ShowTerminal.tsx";
 import {useEffect, useState} from 'react';
@@ -65,10 +67,52 @@ function App() {
     return (
         <>
             <div className="w-full h-full">
-                <video className='videoTag fixed top-0 left-0 w-full h-full object-cover z-1' autoPlay loop muted>
+                {/*<video className='videoTag fixed top-0 left-0 w-full h-full object-cover z-1' autoPlay loop muted>
                     <source src={background} type='video/mp4'/>
-                </video>
-
+                </video>*/}
+                <img src={background} className="fixed top-0 left-0 w-full h-full object-cover z-1"/>
+                <div className="starfall">
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                    <div className="falling-star"></div>
+                </div>
                 <div className="fixed w-full h-full ">
                     <div className="flex items-end justify-center">
                         <div className="fixed top-12">
