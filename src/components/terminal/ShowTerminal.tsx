@@ -8,7 +8,7 @@ const ShowTerminal: React.FC<{ onClick: () => void }> = ({onClick}) => {
     return (
         <div className="min-h-screen bg-custom-gray flex items-center justify-center shadow-2xl">
             <div
-                className="terminal max-w-[800px] max-h-[550px] max-[640px]:w-full max-[640px]:h-full bg-custom-purple text-white font-mono rounded-lg shadow-lg flex flex-col fixed inset-0 mx-auto mt-10 animate-genie">
+                className="terminal max-w-[800px] max-h-[550px] max-[640px]:w-full max-[640px]:h-full bg-white text-black font-mono rounded-lg shadow-lg flex flex-col fixed inset-0 mx-auto mt-10 animate-genie">
                 <div
                     className="bg-custom-gray font-jetbrains text-white flex flex-row items-center justify-between px-4 py-2 rounded-t-lg">
                     <div className="w-full flex items-center justify-between ml-8">
@@ -21,12 +21,12 @@ const ShowTerminal: React.FC<{ onClick: () => void }> = ({onClick}) => {
                     </div>
                 </div>
 
-                <div className="w-full h-fit flex flex-col items-start space-y-2 px-4 mx-1 text-white font-jetbrains">
+                <div className="w-full h-fit flex flex-col items-start space-y-2 px-4 mx-1 text-black font-jetbrains">
                     <div className="text-sm md:text-base lg:text-lg">
-                        <span className="text-green-300">aliaks@my_pc</span>
-                        <span className="text-white">:</span>
+                        <span className="text-green-500">aliaks@my_pc</span>
+                        <span className="text-black">:</span>
                         <span className="text-blue-500">~/About</span>
-                        <span className="text-white">$ </span>
+                        <span className="text-green-500">$ </span>
                         <TypeAnimation
                             sequence={[
                                 'cat About.txt',
@@ -41,12 +41,14 @@ const ShowTerminal: React.FC<{ onClick: () => void }> = ({onClick}) => {
                         <div className="w-fit h-fit">
                             {isTextVisible && (
                                 <div className="w-fit h-fit text-xs sm:text-base lg:text-lg text-left">
-                                <span className="text-white">
-                                    Hello! My name is Aliaksei, but you can call me Aliaks. I am a dedicated and aspiring Software Engineer currently pursuing my studies in Electronics and Telecommunications at AGH University of Science and Technology in Krakow, Poland.<br/><br/>
+                                <span className="text-black">
+                                    Hello! My name is Aliaksei, but you can call me Aliaks. I’m a Software Engineer based in Krakow, Poland. I recently completed my Bachelor of Engineering in Electronics and Telecommunications at AGH University of Science and Technology.<br/><br/>
 
-                                    With a strong foundation in Java programming, I am deeply passionate about software development and continually strive to enhance my skills and broaden my expertise. My ambition is to evolve into a proficient and impactful developer, contributing innovative solutions to the ever-changing tech landscape.<br/><br/>
+                                    I’m passionate about building reliable and scalable software. I enjoy exploring complex systems and continuously improving my technical skills while working on meaningful projects.<br/><br/>
 
-                                    I consider myself as a creative, reliable, and quick learner, with a strong inclination toward collaboration and teamwork. I thrive in environments that challenge me to grow and am eager to embrace new opportunities and experiences that will shape my journey as a developer.<br/>
+                                    In my free time, I like to dive deeper into blockchain technologies, cryptography, and distributed systems, while also expanding my broader engineering knowledge.<br/><br/>
+
+                                    I consider myself a creative, reliable, and fast learner who enjoys collaboration and teamwork. I’m always looking for new challenges and opportunities that help me grow as a developer and contribute to innovative solutions.<br/>
                                 </span>
                                 </div>
                             )}

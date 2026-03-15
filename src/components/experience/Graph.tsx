@@ -3,6 +3,7 @@ import Chart, { Props } from "react-apexcharts";
 import idea from "../../assets/icons/experience/idea.svg";
 import aibron from "../../assets/icons/experience/companies/aibron.png"
 import ink from "../../assets/icons/experience/companies/img.png"
+import yehi from "../../assets/icons/experience/companies/yehi_black.svg"
 
 const chartConfig: Props = {
     type: "line",
@@ -10,7 +11,7 @@ const chartConfig: Props = {
     series: [
         {
             name: "XP",
-            data: [40, 100, 140, 230, 250, 300, 500, 600, 650, 850, 1150, 1300, 2000],
+            data: [40, 100, 140, 230, 250, 300, 500, 600, 650, 850, 1150, 1300, 2000, 2800, 3400, 3600, 3800, 4000, 4300, 4500, 4600, 4700, 4800, 5350, 5700, 6300, 7000, 7800, 8800],
         },
     ],
     options: {
@@ -64,19 +65,34 @@ const chartConfig: Props = {
             },
             categories: [
                 "Nov 2023",
-                "Dec",
-                "Jan",
-                "Feb",
-                "Mar",
-                "Apr",
-                "May",
-                "Jun",
-                "Jul",
-                "Aug",
-                "Sep",
-                "Oct",
-                "Nov",
-                "Dec 2024"
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "Jul 2024",
+                "",
+                "",
+                "Oct 2024",
+                "",
+                "Dec 2024",
+                "",
+                "Feb 2025",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "Sep 2026",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "now"
             ],
         },
         yaxis: {
@@ -146,22 +162,42 @@ const Graph = () => {
 
             <CardFooter placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                 <div className="flex flex-col gap-4">
-                    <div className="flex flex-row items-center justify-start space-x-5 shadow-xl rounded-2xl">
-                        <div className="w-20 h-20 rounded-2xl">
-                            <img src={aibron} className="w-20 h-20 rounded-2xl"/>
+                    <div className="flex flex-row items-center justify-start space-x-5 shadow-2xl rounded-2xl">
+                        <div className="w-20 h-20 rounded-l-2xl bg-white flex items-center justify-center">
+                            <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjrve7uKx8vZMGktdQvkqabpjovjnHT4AiLw&s"} className="object-cover w-4/5"/>
                         </div>
                         <div className="flex flex-col">
-                            <Typography variant="h2" color="blue-gray"
+                            <Typography variant="h5" color="blue-gray"
                                         placeholder={undefined}
                                         onPointerEnterCapture={undefined}
                                         onPointerLeaveCapture={undefined}>
-                                Java Backend Developer Intern
+                                Software Development Engineer I
                             </Typography>
                             <Typography variant="small" color="gray" className="max-w-sm font-normal"
                                         placeholder={undefined}
                                         onPointerEnterCapture={undefined}
                                         onPointerLeaveCapture={undefined}>
-                                28th July 2024 - 1st September 2024
+                                1st September 2025 - now
+                            </Typography>
+                        </div>
+                    </div>
+
+                    <div className="flex flex-row items-center justify-start space-x-5 shadow-2xl rounded-2xl">
+                        <div className="w-20 h-20 rounded-l-2xl bg-white flex items-center justify-center">
+                            <img src={yehi} className="object-cover w-4/5"/>
+                        </div>
+                        <div className="flex flex-col">
+                            <Typography variant="h5" color="blue-gray"
+                                        placeholder={undefined}
+                                        onPointerEnterCapture={undefined}
+                                        onPointerLeaveCapture={undefined}>
+                                CO-Founder and Software Engineer
+                            </Typography>
+                            <Typography variant="small" color="gray" className="max-w-sm font-normal"
+                                        placeholder={undefined}
+                                        onPointerEnterCapture={undefined}
+                                        onPointerLeaveCapture={undefined}>
+                                21st December 2024 - 17 November 2025
                             </Typography>
                         </div>
                     </div>
@@ -171,7 +207,7 @@ const Graph = () => {
                             <img src={ink} className="object-cover"/>
                         </div>
                         <div className="flex flex-col">
-                            <Typography variant="h2" color="blue-gray"
+                            <Typography variant="h5" color="blue-gray"
                                         placeholder={undefined}
                                         onPointerEnterCapture={undefined}
                                         onPointerLeaveCapture={undefined}>
@@ -182,6 +218,26 @@ const Graph = () => {
                                         onPointerEnterCapture={undefined}
                                         onPointerLeaveCapture={undefined}>
                                 1st October 2024 - 1st November 2024
+                            </Typography>
+                        </div>
+                    </div>
+
+                    <div className="flex flex-row items-center justify-start space-x-5 shadow-xl rounded-2xl">
+                        <div className="w-20 h-20 rounded-2xl flex items-center justify-center">
+                            <img src={aibron} className="w-20 h-20 rounded-2xl"/>
+                        </div>
+                        <div className="flex flex-col">
+                            <Typography variant="h5" color="blue-gray"
+                                        placeholder={undefined}
+                                        onPointerEnterCapture={undefined}
+                                        onPointerLeaveCapture={undefined}>
+                                Java Backend Developer Intern
+                            </Typography>
+                            <Typography variant="small" color="gray" className="max-w-sm font-normal"
+                                        placeholder={undefined}
+                                        onPointerEnterCapture={undefined}
+                                        onPointerLeaveCapture={undefined}>
+                                28th July 2024 - 1st September 2024
                             </Typography>
                         </div>
                     </div>
