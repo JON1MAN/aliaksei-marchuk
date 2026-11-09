@@ -86,14 +86,14 @@ function App() {
                         </div>
                     </div>
                 </DottedSurface>
-                <div className="fixed w-full h-full ">
+                <div className="pointer-events-none fixed inset-0 z-10">
                     <div className="flex items-end justify-center">
-                        <div className="fixed top-12">
-                            <h1 className="text-8xl text-white font-apple font-bold bg-opacity-90">{formattedTime}</h1>
-                            <h2 className="text-3xl text-white font-apple font-bold text-center opacity-90">{formattedDate}</h2>
+                        <div className="fixed top-12 text-center text-gray-900">
+                            <h1 className="text-8xl font-apple font-bold">{formattedTime}</h1>
+                            <h2 className="text-3xl font-apple font-bold opacity-90">{formattedDate}</h2>
                         </div>
                     </div>
-                    <div className="flex items-center justify-center relative">
+                    <div className="pointer-events-auto flex items-center justify-center relative">
                         <div className="fixed bottom-10">
                             <Navbar
                                 className="mx-auto max-w-screen-xl px-4 py-2 lg:px-8 lg:py-4 rounded-3xl backdrop-blur-md bg-white/60 shadow-xl"
