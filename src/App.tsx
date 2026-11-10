@@ -133,7 +133,7 @@ function App() {
                             )}
                             {showProjects && (
                                 <div
-                                    className="fixed inset-0 flex flex-col items-center justify-center z-50 animate-genie"
+                                    className="fixed inset-0 flex flex-col items-center justify-center z-50 animate-genie shadow-lg"
                                     onClick={closeShowProjects}>
                                     <div
                                         className="w-1/2 max-[640px]:w-full max-[1024px]:w-1/2 bg-gray-100 text-white flex flex-row items-center justify-between px-4 py-2 md:rounded-t-2xl">
@@ -151,7 +151,7 @@ function App() {
                                     </div>
 
                                     <div
-                                        className="relative w-1/2 h-3/4 max-[640px]:w-full max-[1024px]:w-1/2 max-[640px]:h-full lg:h-fit bg-white md:rounded-b-2xl overflow-y-auto"
+                                        className="relative shadow-lg w-1/2 h-3/4 max-[640px]:w-full max-[1024px]:w-1/2 max-[640px]:h-full lg:h-fit bg-white md:rounded-b-2xl overflow-y-auto"
                                         onClick={(e) => e.stopPropagation()}>
                                         <ShowProjects/>
                                     </div>
