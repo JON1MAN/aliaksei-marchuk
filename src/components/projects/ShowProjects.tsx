@@ -2,7 +2,6 @@ import React from 'react';
 import gym from '../../assets/icons/projects/gym.svg'
 import bot from '../../assets/icons/projects/bot.svg'
 import weather from '../../assets/icons/projects/ai.svg'
-import exchanger from '../../assets/icons/projects/exchanger.svg'
 
 const ShowProjects: React.FC = () => {
     return (
